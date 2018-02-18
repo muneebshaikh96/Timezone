@@ -1,7 +1,7 @@
+// MainActivity.java 
 package pk.sudoware.timezone;
 
 import android.icu.text.DateFormat;
-import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -34,7 +34,7 @@ import java.util.TimeZone;
 public class Front extends AppCompatActivity {
     Spinner location;
     TextView textView, tv2;
-    final String API2 = "https://www.sudoware.pk/timezone/gettime.php";
+    final String API = "https://www.sudoware.pk/timezone/gettime.php";
 
     String[] ids = { "25.0700510,67.2847795",
                       "21.4362767,39.7064562",
@@ -88,7 +88,7 @@ public class Front extends AppCompatActivity {
 
     void callWebService(final String latitude, final String longitude) {
 
-        StringRequest getReq = new StringRequest(Request.Method.POST, API2, new Response.Listener<String>() {
+        StringRequest getReq = new StringRequest(Request.Method.POST, API, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
                 Log.d("Response", response);
