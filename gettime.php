@@ -1,10 +1,11 @@
+//Php file to request google timzone API with location for timezone and Send that timezone to the Android frontend 
 <?php
 
 $latitude = $_POST['latitude'];
 $longitude = $_POST['longitude'];
 
 $time = time();
-$url = "https://maps.googleapis.com/maps/api/timezone/json?location=$latitude,$longitude&timestamp=$time&key=AIzaSyD6RTJO18NBbmf9b6F_jshqZs6C8d6aN3Y";
+$url = "https://maps.googleapis.com/maps/api/timezone/json?location=$latitude,$longitude&timestamp=$time&key=xxxxxxxxx";
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, $url);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
