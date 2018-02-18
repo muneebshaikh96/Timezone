@@ -1,4 +1,4 @@
-//Volley Singleton class send request
+//VolleySingleton class to send request
 package pk.sudoware.timezone;
 
 import android.content.Context;
