@@ -34,7 +34,7 @@ import java.util.TimeZone;
 public class Front extends AppCompatActivity {
     Spinner location;
     TextView textView, tv2;
-    final String API = "https://www.sudoware.pk/timezone/gettime.php";
+    final String API = "https://localhost/timezone/gettime.php"; //Your url for gettime.php
 
     String[] ids = { "25.0700510,67.2847795",
                       "21.4362767,39.7064562",
